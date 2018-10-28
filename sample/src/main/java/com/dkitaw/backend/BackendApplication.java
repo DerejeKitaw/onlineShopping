@@ -1,12 +1,12 @@
-package com.dkitaw.sample;
+package com.dkitaw.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SampleApplication {
+public class BackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SampleApplication.class, args);
+		SpringApplication.run(BackendApplication.class, args);
 	}
 }
