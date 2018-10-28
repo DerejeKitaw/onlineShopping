@@ -1,4 +1,5 @@
-package com.dkitaw.backend.ui.model;
+package com.dkitaw.backend.io.entity;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -8,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Category implements Serializable {
+public class CategoryEntity implements Serializable {
 	private static final long serialVersionUID = 4175690654820454176L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
