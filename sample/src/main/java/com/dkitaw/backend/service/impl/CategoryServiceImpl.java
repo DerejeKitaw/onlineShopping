@@ -19,14 +19,13 @@ public class CategoryServiceImpl implements CategoryService {
 		category.setImageURL("RAD_1.png");
 		
 		categories.add(category);
+		CategoryDTO category2 = new CategoryDTO();
+		category2.setId(2);
+		category2.setName("Phone");
+		category2.setDescription("New Phone Apple");
+		category2.setImageURL("PHON_1.png");
 		
-		category.setId(2);
-		category.setName("Phone");
-		category.setDescription("New Phone Apple");
-		category.setImageURL("PHON_1.png");
-		
-		categories.add(category);
-		
+		categories.add(category2);	
 	}
 
 	@Override
