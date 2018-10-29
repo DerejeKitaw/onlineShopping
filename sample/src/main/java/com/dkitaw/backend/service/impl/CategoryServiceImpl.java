@@ -19,6 +19,7 @@ public class CategoryServiceImpl implements CategoryService {
 		category.setImageURL("RAD_1.png");
 		
 		categories.add(category);
+		
 		CategoryDTO category2 = new CategoryDTO();
 		category2.setId(2);
 		category2.setName("Phone");
@@ -26,6 +27,14 @@ public class CategoryServiceImpl implements CategoryService {
 		category2.setImageURL("PHON_1.png");
 		
 		categories.add(category2);	
+		
+		CategoryDTO category3 = new CategoryDTO();
+		category3.setId(3);
+		category3.setName("Table");
+		category3.setDescription("Compputer desk");
+		category3.setImageURL("TABLE_1.png");
+		
+		categories.add(category3);
 	}
 
 	@Override
