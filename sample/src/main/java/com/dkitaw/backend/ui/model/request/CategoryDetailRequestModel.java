@@ -1,18 +1,10 @@
-package com.dkitaw.backend.ui.model.response;
+package com.dkitaw.backend.ui.model.request;
 
-public class CategoryRest  {
-	private String categoryId;
+public class CategoryDetailRequestModel {
 	private String name;
 	private String description;
 	private String imageURL;
 	private boolean active = true;
-	
-	public String getCategoryId() {
-		return categoryId;
-	}
-	public void setCategoryId(String categoryId) {
-		this.categoryId = categoryId;
-	}
 	public String getName() {
 		return name;
 	}
@@ -37,9 +29,5 @@ public class CategoryRest  {
 	public void setActive(boolean active) {
 		this.active = active;
 	}
-	@Override
-	public String toString() {
-		return "Category [name=" + name + ", description=" + description + ", imageURL=" + imageURL
-				+ ", active=" + active + "]";
-	}
+	
 }

@@ -8,13 +8,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="categories")
 public class CategoryEntity implements Serializable {
 	private static final long serialVersionUID = 4175690654820454176L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
+	private String categoryId;
+	@Column(nullable=false, length=120)
 	private String name;
 	
 	private String description;
@@ -31,6 +33,12 @@ public class CategoryEntity implements Serializable {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public String getCategoryId() {
+		return categoryId;
+	}
+	public void setCategoryId(String categoryId) {
+		this.categoryId = categoryId;
 	}
 	public String getName() {
 		return name;
