@@ -13,9 +13,11 @@ public class CategoryEntity implements Serializable {
 	private static final long serialVersionUID = 4175690654820454176L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private long id;
 	
+	@Column(nullable=false, length=120)
 	private String categoryId;
+	
 	@Column(nullable=false, length=120)
 	private String name;
 	
@@ -28,7 +30,7 @@ public class CategoryEntity implements Serializable {
 	private boolean active = true;
 
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 	public void setId(int id) {

@@ -8,4 +8,6 @@ public interface CategoryService {
 	List<CategoryDTO> getCategories(int page, int limit);
 
 	CategoryDTO createCategory(CategoryDTO category);
+
+	CategoryDTO getCategoryByCategoryId(String CategoryId);
 }
