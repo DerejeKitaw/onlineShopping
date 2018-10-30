@@ -5,8 +5,31 @@ POST http://localhost:8080/api/category/create HTTP/1.1
 content-type: application/json
 
 {
+    "name":"Solar",
+    "description":"New tech solar panel",
+    "imageURL":"SOL_1",
+    "active":true
+}
+###
+POST http://localhost:8080/api/category/create HTTP/1.1
+content-type: application/json
+
+{
+    "name":"Television",
+    "description":"Samsung flat screen",
+    "imageURL":"TV_1",
+    "active":true
+}
+###
+POST http://localhost:8080/api/category/create HTTP/1.1
+content-type: application/json
+
+{
     "name":"Phone",
     "description":"Apple phone",
     "imageURL":"PHONE_1",
     "active":true
 }
+
+###
+GET http://localhost:8080/api/category/JHMtWiweuwrYw96fEX7PAD8xsilVMKf
