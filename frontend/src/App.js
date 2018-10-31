@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
+import ProductDashboard from './components/ProductDashboard';
+import Products from './components/Products';
 import Layout from './hoc/Layout';
 // import axios from 'axios';
 import { Provider } from 'react-redux';
@@ -20,7 +21,8 @@ class App extends Component {
         <Router>
           <Layout className="container">
             <Switch>
-              <Route path="/" exact component={Home} />
+            <Route path="/product" exact component={ProductDashboard} />
+            <Route path="/product/:id" exact component={Products} />
             </Switch>
           </Layout>
         </Router>

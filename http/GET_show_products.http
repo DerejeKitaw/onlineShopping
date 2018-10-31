@@ -5,8 +5,8 @@ POST http://localhost:8080/api/category/create HTTP/1.1
 content-type: application/json
 
 {
-    "name":"Solar",
-    "description":"New tech solar panel",
+    "name":"Computer",
+    "description":"New tech Computer panel",
     "imageURL":"SOL_1",
     "active":true
 }
@@ -33,3 +33,5 @@ content-type: application/json
 
 ###
 GET http://localhost:8080/api/category/JHMtWiweuwrYw96fEX7PAD8xsilVMKf
+###
+GET https://www.bestbuy.com/site/electronics/black-friday/pcmcat225600050002.c?id=pcmcat225600050002
